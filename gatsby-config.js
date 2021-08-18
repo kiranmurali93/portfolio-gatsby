@@ -1,15 +1,27 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "portfolio-gatsby",
+    title: "Kiran PK || Portfolio-gatsby",
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'about',
+        link: '/about'
+      }
+    ]
   },
   plugins: [
-    "gatsby-plugin-image",
+    "gatsby-plugin-styled-components",
+    "gatsby-transformer-json",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-source-filesystem",
       options: {
-        trackingId: "",
-      },
+        name: "data",
+        path: "./src/data/",
+      }
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
