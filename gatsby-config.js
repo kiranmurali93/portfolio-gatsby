@@ -1,17 +1,8 @@
 module.exports = {
   siteMetadata: {
+    pathPrefix:"/portfolio-gatsby",
     siteUrl: "https://www.yourdomain.tld",
     title: "Kiran PK || Portfolio-gatsby",
-    menuLinks: [
-      {
-        name: 'home',
-        link: '/'
-      },
-      {
-        name: 'about',
-        link: '/about'
-      }
-    ]
   },
   plugins: [
     "gatsby-plugin-styled-components",
